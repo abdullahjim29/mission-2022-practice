@@ -90,7 +90,7 @@
 }
 
 /* responsive for small devices */
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 0px) and (max-width: 890px) {
   .hero-section{
     flex-direction: column-reverse;
     gap: 24px;
@@ -123,3 +123,5 @@
     margin-top: 32px;
   }
 }
+
+
