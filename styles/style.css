@@ -30,11 +30,13 @@
 .hero-content p,
 .btn-primary,
 .my-mission-title,
-.my-mission-card h5,p
+.my-mission-card h5,
+p,
+.develop-title,
+.develop-description 
 {
   font-family: "Poppins", sans-serif;
 }
-
 .special-color {
   color: #ffad5a;
 }
@@ -53,11 +55,11 @@
   display: flex;
 }
 
-.dark-1{
+.dark-1 {
   color: rgb(66, 66, 66);
 }
 
-.dark-2{
+.dark-2 {
   color: rgb(62, 62, 62);
 }
 
@@ -156,7 +158,43 @@
   width: 40%;
 }
 
-/* responsive for small and medium devices for hero section */
+/* develop section related styles */
+
+.develop-section {
+  width: 78%;
+  max-width: 1128px;
+  margin: 85px auto;
+  align-items: center;
+  position: relative;
+}
+
+.develop-image > img {
+  width: 80%;
+  position: relative;
+  z-index: 1;
+}
+.develop-image .shape-1 {
+  width: 20%;
+  position: absolute;
+  left: -80px;
+  top: 50px;
+  z-index: 0;
+}
+
+.develop-title {
+  color: rgb(51, 51, 51);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.develop-description {
+  color: rgb(62, 62, 62);
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 18px 0;
+}
+
+/* responsive specifically for hero section */
 @media screen and (min-width: 0px) and (max-width: 890px) {
   .hero-section {
     flex-direction: column-reverse;
@@ -191,18 +229,16 @@
   }
 }
 
-
 /* responsive for small devices */
 @media screen and (max-width: 576px) {
-  .my-mission-card-container{
-    grid-template-columns: repeat(1,1fr);
+  .my-mission-card-container {
+    grid-template-columns: repeat(1, 1fr);
   }
-
 }
 
 /* responsive for medium devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .my-mission-card-container{
-    grid-template-columns: repeat(2,1fr);
+  .my-mission-card-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
