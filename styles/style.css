@@ -231,9 +231,26 @@ p,
 
 /* responsive for small devices */
 @media screen and (max-width: 576px) {
+
+  /* my mission */
   .my-mission-card-container {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  /* develop */
+  .develop-section{
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .shape-1{
+    display: none;
+  }
+
+  .develop-image > img{
+    width: 100%;
+  }
+
 }
 
 /* responsive for medium devices */
