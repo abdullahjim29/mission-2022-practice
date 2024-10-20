@@ -33,7 +33,9 @@
 .my-mission-card h5,
 p,
 .develop-title,
-.develop-description 
+.develop-description,
+.community-title,
+.community-description 
 {
   font-family: "Poppins", sans-serif;
 }
@@ -181,18 +183,46 @@ p,
   z-index: 0;
 }
 
-.develop-title {
+.develop-title,.community-title {
   color: rgb(51, 51, 51);
   font-size: 2rem;
   font-weight: 700;
 }
 
-.develop-description {
+.develop-description,.community-description {
   color: rgb(62, 62, 62);
   font-size: 0.9rem;
   font-weight: 400;
   margin: 18px 0;
 }
+
+
+/* community section related styles */
+
+.community-section{
+  width: 78%;
+  max-width: 1128px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 100px;
+  position: relative;
+  margin-bottom: 84px;
+}
+
+.community-image img{
+  width: 80%;
+  position: relative;
+  z-index: 1;
+}
+.community-image .shape{
+  width: 18%;
+  position: absolute;
+  top: 250px;
+  right: 5px;
+  z-index: 0;
+}
+
+
 
 /* responsive specifically for hero section */
 @media screen and (min-width: 0px) and (max-width: 890px) {
@@ -255,7 +285,20 @@ p,
 
 /* responsive for medium devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
+
+  /* my mission */
   .my-mission-card-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* develop */
+  .shape-1{
+    display: none;
+  }
+  .develop-image > img{
+    width: 100%;
+  }
+  .develop-section{
+    gap: 24px;
   }
 }
