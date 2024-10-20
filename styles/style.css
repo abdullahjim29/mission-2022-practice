@@ -37,8 +37,7 @@ p,
 .community-title,
 .community-description,
 .corona-heading,
-.corona-content-title
-{
+.corona-content-title {
   font-family: "Poppins", sans-serif;
 }
 .special-color {
@@ -188,8 +187,7 @@ p,
 .develop-title,
 .community-title,
 .corona-heading,
-.corona-content-title
-{
+.corona-content-title {
   color: rgb(51, 51, 51);
   font-size: 2rem;
   font-weight: 700;
@@ -197,18 +195,16 @@ p,
 
 .develop-description,
 .community-description,
-.corona-content-description
-{
+.corona-content-description {
   color: rgb(62, 62, 62);
   font-size: 0.9rem;
   font-weight: 400;
   margin: 18px 0;
 }
 
-
 /* community section related styles */
 
-.community-section{
+.community-section {
   width: 78%;
   max-width: 1128px;
   margin: 0 auto;
@@ -218,12 +214,12 @@ p,
   margin-bottom: 84px;
 }
 
-.community-image img{
+.community-image img {
   width: 80%;
   position: relative;
   z-index: 1;
 }
-.community-image .shape{
+.community-image .shape {
   width: 18%;
   position: absolute;
   top: 245px;
@@ -232,59 +228,84 @@ p,
 }
 
 /* corona section related styles */
-.corona-section{
+.corona-section {
   width: 78%;
   max-width: 1128px;
   margin: 0 auto;
   margin-bottom: 100px;
 }
 
-.corona-heading{
+.corona-heading {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 80px;
 }
 
-.corona-content-title{
+.corona-content-title {
   font-size: 3rem;
   line-height: 60px;
 }
 
-.corona-container{
+.corona-container {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   position: relative;
   gap: 0;
 }
 
-.corona-image .app-img{
+.corona-image .app-img {
   width: 60%;
   position: relative;
   z-index: 1;
 }
 
-.shape3{
+.shape3 {
   width: 12%;
   position: absolute;
   left: -25px;
   top: -20px;
 }
 
-.shape4{
+.shape4 {
   width: 8%;
   position: absolute;
   top: 355px;
   left: 235px;
 }
 
-.shape5{
+.shape5 {
   width: 8%;
   position: absolute;
   bottom: 8px;
   left: 2px;
 }
 
+/* footer section related styles */
+
+.foot-section {
+  background-color: rgb(11, 13, 23);
+  text-align: center;
+  padding: 40px 0;
+}
+.foot-title {
+  color: rgb(255, 255, 255);
+  font-family: Lobster;
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.special {
+  color: rgb(255, 89, 89);
+  font-family: Lobster;
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.foot-description {
+  color: rgb(217, 219, 225);
+  font-size: 14px;
+}
 
 /* responsive specifically for hero section */
 @media screen and (min-width: 0px) and (max-width: 890px) {
@@ -323,7 +344,6 @@ p,
 
 /* responsive for small devices */
 @media screen and (max-width: 576px) {
-
   /* my mission */
   .my-mission-card-container {
     grid-template-columns: repeat(1, 1fr);
@@ -331,7 +351,7 @@ p,
   }
 
   /* develop */
-  .develop-section{
+  .develop-section {
     flex-direction: column;
     gap: 24px;
     text-align: center;
@@ -341,51 +361,48 @@ p,
   .shape,
   .shape3,
   .shape4,
-  .shape5
-  {
+  .shape5 {
     display: none;
   }
 
-  .develop-image > img{
+  .develop-image > img {
     width: 100%;
   }
 
   /* community */
-  .community-section{
+  .community-section {
     flex-direction: column-reverse;
     gap: 24px;
     text-align: center;
   }
 
-  .community-image img{
+  .community-image img {
     width: 100%;
   }
 
   /* corona */
-  .corona-container{
-    grid-template-columns: repeat(1,1fr);
+  .corona-container {
+    grid-template-columns: repeat(1, 1fr);
     text-align: center;
   }
 
-  .corona-image .app-img{
+  .corona-image .app-img {
     width: 100%;
   }
 
   .corona-content-title,
-  .corona-heading{
+  .corona-heading {
     font-size: 2rem;
     line-height: 50px;
   }
 
-  .corona-heading{
+  .corona-heading {
     margin: 12px 0px;
   }
-
 }
 
 /* responsive for medium devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-
   /* my mission */
   .my-mission-card-container {
     grid-template-columns: repeat(2, 1fr);
@@ -396,35 +413,34 @@ p,
   .shape,
   .shape3,
   .shape4,
-  .shape5
-  {
+  .shape5 {
     display: none;
   }
-  .develop-image > img{
+  .develop-image > img {
     width: 100%;
   }
-  .develop-section{
+  .develop-section {
     gap: 24px;
   }
 
   /* community */
-  .community-section{
+  .community-section {
     gap: 32px;
   }
-  .community-image img{
+  .community-image img {
     width: 100%;
   }
 
   /* corona */
 
-  .corona-container{
+  .corona-container {
     gap: 24px;
   }
-  .corona-image .app-img{
+  .corona-image .app-img {
     width: 100%;
   }
   .corona-content-title,
-  .corona-heading{
+  .corona-heading {
     font-size: 2rem;
     line-height: 50px;
   }
