@@ -35,7 +35,9 @@ p,
 .develop-title,
 .develop-description,
 .community-title,
-.community-description 
+.community-description,
+.corona-heading,
+.corona-content-title
 {
   font-family: "Poppins", sans-serif;
 }
@@ -183,13 +185,20 @@ p,
   z-index: 0;
 }
 
-.develop-title,.community-title {
+.develop-title,
+.community-title,
+.corona-heading,
+.corona-content-title
+{
   color: rgb(51, 51, 51);
   font-size: 2rem;
   font-weight: 700;
 }
 
-.develop-description,.community-description {
+.develop-description,
+.community-description,
+.corona-content-description
+{
   color: rgb(62, 62, 62);
   font-size: 0.9rem;
   font-weight: 400;
@@ -222,6 +231,58 @@ p,
   z-index: 0;
 }
 
+/* corona section related styles */
+.corona-section{
+  width: 78%;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.corona-heading{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 80px;
+}
+
+.corona-content-title{
+  font-size: 3rem;
+  line-height: 60px;
+}
+
+.corona-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  position: relative;
+  gap: 0;
+}
+
+.corona-image .app-img{
+  width: 60%;
+  position: relative;
+  z-index: 1;
+}
+
+.shape3{
+  width: 12%;
+  position: absolute;
+  left: -25px;
+  top: -20px;
+}
+
+.shape4{
+  width: 8%;
+  position: absolute;
+  top: 355px;
+  left: 235px;
+}
+
+.shape5{
+  width: 8%;
+  position: absolute;
+  bottom: 8px;
+  left: 2px;
+}
 
 
 /* responsive specifically for hero section */
