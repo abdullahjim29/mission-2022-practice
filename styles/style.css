@@ -236,6 +236,7 @@ p,
   width: 78%;
   max-width: 1128px;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .corona-heading{
@@ -326,15 +327,22 @@ p,
   /* my mission */
   .my-mission-card-container {
     grid-template-columns: repeat(1, 1fr);
+    text-align: center;
   }
 
   /* develop */
   .develop-section{
     flex-direction: column;
     gap: 24px;
+    text-align: center;
   }
 
-  .shape-1{
+  .shape-1,
+  .shape,
+  .shape3,
+  .shape4,
+  .shape5
+  {
     display: none;
   }
 
@@ -346,14 +354,31 @@ p,
   .community-section{
     flex-direction: column-reverse;
     gap: 24px;
-  }
-
-  .shape{
-    display: none;
+    text-align: center;
   }
 
   .community-image img{
     width: 100%;
+  }
+
+  /* corona */
+  .corona-container{
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+  }
+
+  .corona-image .app-img{
+    width: 100%;
+  }
+
+  .corona-content-title,
+  .corona-heading{
+    font-size: 2rem;
+    line-height: 50px;
+  }
+
+  .corona-heading{
+    margin: 12px 0px;
   }
 
 }
@@ -367,7 +392,12 @@ p,
   }
 
   /* develop */
-  .shape-1{
+  .shape-1,
+  .shape,
+  .shape3,
+  .shape4,
+  .shape5
+  {
     display: none;
   }
   .develop-image > img{
@@ -384,7 +414,18 @@ p,
   .community-image img{
     width: 100%;
   }
-  .shape{
-    display: none;
+
+  /* corona */
+
+  .corona-container{
+    gap: 24px;
+  }
+  .corona-image .app-img{
+    width: 100%;
+  }
+  .corona-content-title,
+  .corona-heading{
+    font-size: 2rem;
+    line-height: 50px;
   }
 }
