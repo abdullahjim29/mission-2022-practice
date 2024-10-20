@@ -217,8 +217,8 @@ p,
 .community-image .shape{
   width: 18%;
   position: absolute;
-  top: 250px;
-  right: 5px;
+  top: 245px;
+  right: 18px;
   z-index: 0;
 }
 
@@ -281,6 +281,20 @@ p,
     width: 100%;
   }
 
+  /* community */
+  .community-section{
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+
+  .shape{
+    display: none;
+  }
+
+  .community-image img{
+    width: 100%;
+  }
+
 }
 
 /* responsive for medium devices */
@@ -300,5 +314,16 @@ p,
   }
   .develop-section{
     gap: 24px;
+  }
+
+  /* community */
+  .community-section{
+    gap: 32px;
+  }
+  .community-image img{
+    width: 100%;
+  }
+  .shape{
+    display: none;
   }
 }
